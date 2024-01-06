@@ -1,0 +1,37 @@
+<html>
+    <header>
+        <title>Web Launcher</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                height: 99%;
+            }
+            .col {
+                display: flex;
+                flex-direction: column;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+            .tablet {
+                width: 15%;
+                height: 15%;
+                margin: 0.5%;
+                padding: 0.5%;
+            }
+            button.tablet {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </header>
+    <body>
+        <div class="container" style="border: 4px solid black; margin-left: 10%; margin-right: 10%;">
+                <div class="row tablet"> <button class="tablet">Youtube Music</button> </div>
+                <div class="row tablet"> <button class="tablet">Bandcamp</button> </div>
+                <div class="row tablet"> <button class="tablet">Spotify</button> </div>
+        </div>
+    </body>
+</html>
