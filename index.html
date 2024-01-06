@@ -48,7 +48,7 @@
                 background-color: #282828;
             }
             .fadein{
-                animation: fadein 2s;
+                animation: fadein;
             }
             @font-face {
                 font-family: 'UnnamedDOSFontIV';
@@ -81,4 +81,13 @@
                 </div>
         </div>
     </body>
+    <script>
+        const fadein_elements = document.querySelectorAll(".fadein");
+        let time = 0;
+        fadein_elements.forEach(animationdelay);
+        function animationdelay(element) {
+            time = time + 700;
+            element.style["animation-duration"] = time+"ms";
+        } 
+    </script>
 </html>
