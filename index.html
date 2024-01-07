@@ -83,11 +83,11 @@
     </body>
     <script>
         const fadein_elements = document.querySelectorAll(".fadein");
-        let time = 0;
+        let time = 500;
         fadein_elements.forEach(animationdelay);
-        function animationdelay(element) {
-            time = time + 700;
+        function animationdelay(element) {      
             element.style["animation-duration"] = time+"ms";
+            time = time + 500;
         } 
     </script>
 </html>
